@@ -1,8 +1,10 @@
 import React from "react";
 
 export default function BottomBar(props){
-        
-    return(
 
+    return(
+        <div className="bottom__bar"></div>
     )
 }
+
+
