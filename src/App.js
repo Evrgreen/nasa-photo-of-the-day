@@ -3,6 +3,19 @@ import axios from "axios";
 import Card from "./Card"
 import "./App.css";
 import BottomBar from "./BottomBar";
+import styled from "styled-components"
+const MainPage = styled.div`
+height:100vh;
+// background-size:fit;
+
+`;
+const Clock = styled.h2`
+color:white;
+font-size:2rem;
+z-index:10;
+
+`;
+
 
 function App() {
   
@@ -21,12 +34,9 @@ function App() {
       console.log(data)
 
     return (
-      <div className="App" style={{backgroundImage: `url(${data.hdurl})` }}>
-        <div className="Clock">
-          <h2>{data.data}</h2>
-        </div>
+      <MainPage className="App" style={{backgroundImage: `url(${data.hdurl})` }}>
         <Card data={data}/>
-      </div>
+      </MainPage>
   );
 }
 
