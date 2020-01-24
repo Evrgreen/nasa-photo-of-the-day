@@ -31,3 +31,10 @@
     transform: rotate(360deg);
   }
 }
+.clock{
+  color:white;
+  font-size:5rem;
+}
+*{
+  color:white;
+}
